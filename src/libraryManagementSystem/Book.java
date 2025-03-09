@@ -20,8 +20,10 @@ public class Book {
 		this.availableBook = availableBook;
 	}
 	
-	
-	
+	public String toString() {
+	    return String.format("Book{id='%s', title='%s', author='%s', category='%s', year=%d, total=%d, available=%d}",
+	            bookId, title, author, category, publishYear, totalBook, availableBook);
+	}
 
 	public String getBookId() {
 		return bookId;
